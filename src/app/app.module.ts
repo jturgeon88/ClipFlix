@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MoviesModule } from './movies/movies.module';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
+import { MovieService } from './movie.service';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { MovieDetailComponent } from './movie-detail/movie-detail.component';
     BrowserModule,
     MoviesModule
   ],
-  providers: [],
+  providers: [MovieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
