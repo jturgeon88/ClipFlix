@@ -3,6 +3,7 @@
   <ul class="movies">
     <li *ngFor="let movie of movies">
       <span class="movie-title">{{ movie.title }}</span>
+      <img src="https://image.tmdb.org/t/p/w440_and_h660_bestv2/{{ movie.poster_path }}" alt="">
     </li>
   </ul>
 </div>
