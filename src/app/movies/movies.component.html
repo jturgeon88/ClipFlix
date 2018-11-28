@@ -2,8 +2,7 @@
   <h2>Default Movies</h2>
   <ul class="movies">
     <li *ngFor="let movie of movies">
-      <span class="movie-title">{{ movie.title }}</span>
-      <img src="{{ posterUrl }}{{ movie.poster_path }}" alt="">
+      <app-movie-tile [movie]="movie"></app-movie-tile>
     </li>
   </ul>
 </div>
